@@ -5,14 +5,14 @@ class Italk (abc.ABC) :
     def talk(self,message):
         pass
 
-class TalkingService:
+class Service:
     
     def __init__(self):
-        self.talkingSys = []
+        self.systems = []
 
     def addTalkingSystem(self, sys):
-        self.talkingSys.append(sys)
+        self.systems.append(sys)
     
     def talk (self, text) :
-        for sys in self.talkingSys : 
+        for sys in self.systems : 
             sys.talk(text)

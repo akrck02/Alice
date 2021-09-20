@@ -1,10 +1,20 @@
+import listen.service as ls
+import move.service as mv
+import stats.service as st
 import talk.service as tk
-import talk.console as cmd
+import watch.service as wt
 
-#Startup
-# print(tk)
-# print(cmd)
+class Alice : 
 
-t = tk.TalkingService()
-t.addTalkingSystem(cmd.Console())
-t.talk("Hi I'm Alice! I'm alive!")
+    def __init__(self):
+        print("Alice has born.")
+        self.talk = tk.Service();
+        self.move = mv.Service();
+        self.listen = ls.Service();
+        self.watch = mv.Service();
+        self.stats = st.Service();
+
+
+ally = Alice();
+
+
