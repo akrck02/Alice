@@ -1,6 +1,10 @@
-import talk as tk
-
+import talk.service as tk
+import talk.console as cmd
 
 #Startup
-print(tk.hello());  
-print(tk.random_phrase());
+# print(tk)
+# print(cmd)
+
+t = tk.TalkingService()
+t.addTalkingSystem(cmd.Console())
+t.talk("Hi I'm Alice! I'm alive!")

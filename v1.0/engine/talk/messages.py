@@ -1,6 +1,5 @@
 import random
 
-
 def hello():
     return "Hello! I'm alice."
 
